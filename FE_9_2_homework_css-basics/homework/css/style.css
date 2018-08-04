@@ -1,4 +1,4 @@
-/*task 1*/
+/* task 1*/
 @media print {
     @page {
          margin-top: 1.5cm;
@@ -98,10 +98,6 @@
         border-top: 26px solid #76cdd7;
         border-right: 130px solid transparent;
         z-index: 1;
-    }
-
-    .gale {
-        border-top: 100px solid red;
     }
 
     /* task 6 */
