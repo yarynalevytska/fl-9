@@ -1,0 +1,193 @@
+/*task 1*/
+@media print {
+    @page {
+         margin-top: 1.5cm;
+    }
+
+    body {
+        background: transparent;
+        padding-top: 0;
+    }
+
+    .tm-sidebar,
+    #about,
+    section:not(:first-of-type) {
+        display: none;
+    }
+
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .tm-banner {
+        height: 200px;
+        padding: unset;
+    }
+
+    .pad {
+        padding: 0 0 0 20px;
+    }
+
+    h2.tm-section-title {
+        color: blue;
+    }
+
+    .flex-2-col {
+        display: block;
+    }
+
+    .tm-team-description-container {
+        max-width: none;
+    }
+
+    .flex-item:last-child {
+        text-align: center;
+    }
+}
+
+@media screen {
+    /* task 2 */
+    .box-bg :hover {
+        background: #20B2AA;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    img.thumbnail {
+        border-radius: 50%;
+    }
+
+    /* task 3 */
+    p::first-letter {
+        color: #76cdd7;
+        font-size: 30px;
+    }
+
+    /* task 4 */
+    .tm-sidebar, 
+    #home,
+    div.flex-2-col:not(:empty),
+    #about,
+    section.heading,
+    section.blocks,
+    #ideas,
+    section.tm-content-box {
+        box-shadow: 0 0 10px 5px grey;
+    }
+
+    /* task 5 */
+    #home,
+    div.flex-2-col:not(:empty),
+    #about,
+    section.heading,
+    section.blocks,
+    #ideas,
+    section.tm-content-box {
+        position: relative;
+    }
+
+    .tm-content-box:not(:empty)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 26px solid #76cdd7;
+        border-right: 130px solid transparent;
+        z-index: 1;
+    }
+
+    .gale {
+        border-top: 100px solid red;
+    }
+
+    /* task 6 */
+    .active h2.tm-section-title {
+        color:gainsboro;
+        letter-spacing: 5px;
+    } 
+
+    /* task 7 */
+    h2 + p {
+        font-style: italic;
+    }
+
+    /* task 8 */
+    p {
+        text-indent: 25px;
+        line-height: 1.8;
+    }
+
+    /* task 9 */ 
+    .heading h2 {
+        color: #76cdd7;
+        text-align: center;
+    } 
+
+    .pad a:link {
+        color: black;
+    }
+
+    .pad a:visited {
+        color: silver;
+    } 
+
+    .pad a:hover {
+        color: #76cdd7; 
+        text-decoration-line: underline;
+        text-decoration-style: double;
+    }
+
+    .text::after {
+        content: "New";
+        color: red;
+        font-size: 10px; 
+        position: absolute;
+    }
+
+    /* task 10 */
+    .blocks li.box:nth-child(odd) {
+        background-color: whitesmoke;
+    }
+
+    .blocks li.box p::first-letter {
+        color: black;
+    }
+
+    .blocks li.box p {
+        text-indent: 0;
+    }
+
+    .blocks li.box {
+        border-color: gray;
+    }
+
+    /* task 11 */
+    .tm-main-nav li:nth-child(odd),
+    .tm-main-nav li:nth-child(2) {
+        border-bottom-style: dotted;
+        border-bottom-color: #DCDCDC;
+    }
+
+    /* task 12 */
+    input[type=text],
+    input[type=email],
+    #contact_message, 
+    button[type=submit]  {
+        color: red;
+    }
+
+    button[type=submit]:hover {
+        background:#76cdd7; 
+        border-color: transparent;
+    }
+
+    .mandatory-field::after {
+        content: "*";
+        color:red;
+        font-weight: bold;
+    }
+}
