@@ -1,0 +1,146 @@
+body {
+    margin: 50px 200px;
+    background: $bodybg;
+}
+
+header {
+    width: auto;
+    height: 300px;
+}
+
+div.logo img {
+    width: 400px;
+    height: 250px;
+    float: left;
+    display: block;
+    clear: both;
+}
+
+nav {
+    border-bottom: 1px solid $linecol;
+    border-top: 1px solid $linecol;
+    text-transform: uppercase;
+    word-spacing: 80px;
+    width: 540px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    display: inline-block;
+    margin-top: 170px;
+    padding-top: 30px;
+    
+    a {
+        text-decoration: none;
+        color: $headercol;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+.toolbar input {
+    width: 200px;
+    height: 30px;
+}
+
+div.toolbar {
+    float: right;
+    border: 1px solid $headercol;
+    color: $headercol;
+}
+
+input[placeholder=Search], input[placeholder=Search]::placeholder {
+    color: $headercol;
+    text-indent: 15px;
+}
+
+#list {
+    article {
+        width: 430px;
+        padding: 10px;
+        background: $contentbg;
+        margin-top: 20px;
+        color: $textcol;
+        line-height: 1.5;
+    }
+    img, div {
+        width: 430px;
+    }
+}
+
+div.post-description {
+    color: $datacol;
+}
+
+h3 {
+    border-top: 1px solid $linecol;
+    padding-top: 5px;
+    color: $headercol;
+    text-transform: uppercase;
+}
+
+div#list.post-list {
+    display: inline-block;
+    clear: both;
+}
+
+div#list.post-list { 
+    article {
+        display: block;
+        
+        &:nth-child(even) {
+            float: right;
+            clear: right;
+        }
+    
+        &:nth-child(odd) {
+            float: left;
+            clear: left;
+        }
+    }
+}
+
+section#about.about { 
+    div {
+        display: block;
+        float: none;
+        clear: both;
+        padding-top: 10px;
+    
+        img {
+            width: 940px;
+        }
+        p {
+            color: $textcol;
+        } 
+    }
+}
+    
+h1, h4 {
+    text-align: right;
+    color: $headercol;
+    text-transform: uppercase;
+}
+
+div#form {
+    input, textarea {
+        width: 900px;
+        display: block;
+        clear: both;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+div#button {
+    float: right;
+    clear: both;
+    input {
+        width: 150px;
+        background: $headercol;
+        color: white;
+    }
+}
+
+footer {
+    clear: right;
+}

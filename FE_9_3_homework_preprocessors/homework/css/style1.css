@@ -1,0 +1,134 @@
+body {
+  margin: 50px 200px;
+  background: white;
+}
+
+header {
+  width: auto;
+  height: 300px;
+}
+
+div.logo img {
+  width: 400px;
+  height: 250px;
+  float: left;
+  display: block;
+  clear: both;
+}
+
+nav {
+  border-bottom: 1px solid midnightblue;
+  border-top: 1px solid midnightblue;
+  text-transform: uppercase;
+  word-spacing: 80px;
+  width: 540px;
+  height: 50px;
+  float: right;
+  text-align: center;
+  display: inline-block;
+  margin-top: 170px;
+  padding-top: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: lightseagreen;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.toolbar input {
+  width: 200px;
+  height: 30px;
+}
+
+div.toolbar {
+  float: right;
+  border: 1px solid lightseagreen;
+  color: lightseagreen;
+}
+
+input[placeholder=Search], input[placeholder=Search]::placeholder {
+  color: lightseagreen;
+  text-indent: 15px;
+}
+
+#list article {
+  width: 430px;
+  padding: 10px;
+  background: gainsboro;
+  margin-top: 20px;
+  color: darkslategray;
+  line-height: 1.5;
+}
+#list img, #list div {
+  width: 430px;
+}
+
+div.post-description {
+  color: lightskyblue;
+}
+
+h3 {
+  border-top: 1px solid midnightblue;
+  padding-top: 5px;
+  color: lightseagreen;
+  text-transform: uppercase;
+}
+
+div#list.post-list {
+  display: inline-block;
+  clear: both;
+}
+
+div#list.post-list article {
+  display: block;
+}
+div#list.post-list article:nth-child(even) {
+  float: right;
+  clear: right;
+}
+div#list.post-list article:nth-child(odd) {
+  float: left;
+  clear: left;
+}
+
+section#about.about div {
+  display: block;
+  float: none;
+  clear: both;
+  padding-top: 10px;
+}
+section#about.about div img {
+  width: 940px;
+}
+section#about.about div p {
+  color: darkslategray;
+}
+
+h1, h4 {
+  text-align: right;
+  color: lightseagreen;
+  text-transform: uppercase;
+}
+
+div#form input, div#form textarea {
+  width: 900px;
+  display: block;
+  clear: both;
+  margin: 10px;
+  padding: 10px;
+}
+
+div#button {
+  float: right;
+  clear: both;
+}
+div#button input {
+  width: 150px;
+  background: lightseagreen;
+  color: white;
+}
+
+footer {
+  clear: right;
+}
