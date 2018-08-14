@@ -1,0 +1,191 @@
+/*:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;*/
+
+  /* These styles are needed only for media query max-width: 575px */
+  /* The 'Up' button (circle button at right bottom corner) */
+  /*--btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+} */
+
+/* Your styles go here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a1223;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+}
+
+ul#menu {
+    list-style-type: none;
+    display: flex;
+    justify-content:flex-end;
+    padding: 30px 50px;
+}
+
+.menu-item {
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.menu-item {
+    color: #5d5d5d;
+}
+
+.menu-item:hover {
+    color: #54597d; 
+}
+
+.active,
+.menu-item:active {
+    color: #54597d;
+}
+
+main {
+    padding: 20px 50px 100px;
+}
+
+.main-header {
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.container {
+    padding: 10px 100px;
+}
+
+.container:nth-child(even) {
+    display: flex;
+    flex-direction: row;
+}
+
+.container:nth-child(odd) {
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.text {
+    width: 45%;
+    background: linear-gradient(to right, #ddd, #5d5d5d);
+     -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text p {
+    text-indent: 2vw;;
+    text-align: justify;
+    color: #5d5d5d; 
+    padding-top: 25px;
+}
+
+img {
+    width: 45%;
+    height: 45%;
+}
+
+.button {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    ul#menu {
+        justify-content: center;
+    }
+        
+   .container:nth-child(even),
+    .container:nth-child(odd) {
+        flex-direction: column;
+    }
+    
+    .text {
+        width: 100%;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        background-color: #fff;
+    }
+    
+    .container {
+        width: 80vw;
+    }
+    
+    .title {
+        color: #000;
+        font-size: 15vw;
+    }
+    
+    .text {
+        color: #484747;
+        background: unset;
+         -webkit-background-clip: unset;  
+    }
+    
+    .text p {
+        font-size: 3vw;
+    }
+    
+    ul#menu {
+        justify-content: flex-start;
+        flex-direction: column; 
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-item {
+        padding: 12px;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    .menu-item {
+        padding-left: 10px;
+    }
+   
+    .active,
+    .manu-item:active {
+        font-weight: bold;
+    }
+    
+    .button {
+        text-decoration: none;;
+        display: block;
+        color: #fff;
+        background-color: #5ebcff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 4vw;
+        padding-top: 17px;
+        box-shadow: 5px 10px 15px lightgray;
+        position: fixed;
+        bottom: 30px;
+        right: 40px;   
+    }
+    
+    .button:hover {
+        border: 2px solid #ddd;
+    }    
+}
